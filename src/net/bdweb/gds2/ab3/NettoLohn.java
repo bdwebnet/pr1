@@ -28,7 +28,7 @@ public class NettoLohn {
         double ng = 0.0; // Netto-Gehalt
 
         // Infos
-        spacer();
+        System.out.println("--------------------------------------------------------------");
         System.out.println("Dieses Programm berechnet das Netto-Gehalt abhängig vom eingegebenen Bruttogehalt.");
         System.out.println("");
         System.out.println("Angenommene Prozentsätze");
@@ -39,9 +39,9 @@ public class NettoLohn {
         System.out.println("Arbeitslosenversicherung:\t" + df.format(av*100) + " %.");
         System.out.println("Pflegeversicherung:\t\t\t" + df.format(pv*100) + " %.");
 
-        space();
-        spacer();
-        space();
+        System.out.println("");
+        System.out.println("--------------------------------------------------------------");
+        System.out.println("");
 
         // Eingabe
         System.out.println("Hiermit wird Ihr Netto-Einkommen berechnet.");
@@ -59,11 +59,11 @@ public class NettoLohn {
         ng = bg - sa;
 
         // Ausgabe
-        space();
-        spacer();
+        System.out.println("");
+        System.out.println("--------------------------------------------------------------");
 
         System.out.println("Brutto-Gehalt: € " + bg);
-        spacer();
+        System.out.println("--------------------------------------------------------------");
         System.out.println("Abzüge");
         System.out.println("Lohnsteuer:\t\t\t\t\t€ " + df.format(lsb));
         System.out.println("Solidaritätsbeitrag:\t\t€ " + df.format(sbb));
@@ -71,21 +71,11 @@ public class NettoLohn {
         System.out.println("Krankenversicherung:\t\t€ " + df.format(kvb));
         System.out.println("Arbeitslosenversicherung:\t€ " + df.format(avb));
         System.out.println("Pflegeversicherung:\t\t\t€ " + df.format(pvb));
-        spacer();
+        System.out.println("--------------------------------------------------------------");
         System.out.println("Summe Abzüge:\t\t\t\t€ " + df.format(sa));
-        spacer();
+        System.out.println("--------------------------------------------------------------");
         System.out.println("Netto-Gehalt:\t\t\t\t€ " + df.format(ng));
-        spacer();
+        System.out.println("--------------------------------------------------------------");
     }
 
-    private static void spacer() {
-        for (int i = 0; i < 90; i++) {
-            System.out.print("-");
-        }
-        System.out.println("-");
-    }
-
-    private static void space() {
-        System.out.println("");
-    }
 }
