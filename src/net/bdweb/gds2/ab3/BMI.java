@@ -7,9 +7,9 @@ public class BMI {
 
     public static void main(String[] args) {
         // INIT
-        double kgw = 0.0;
-        double kgr = 0.0;
-        double bmi = 0.0;
+        double kgw = 0.0; // Körpergewicht
+        double kgr = 0.0; // Körpergröße
+        double bmi = 0.0; // Body Mass Index (BMI)
 
         Scanner sc = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat();
