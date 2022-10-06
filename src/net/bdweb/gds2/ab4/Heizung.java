@@ -9,7 +9,7 @@ public class Heizung {
     public static void main(String[] args) {
 
         // Variablendeklaration
-        int raumtemperatur = 0;
+        int raumtemperatur;
 
         // Eingabe
         Scanner sc = new Scanner(System.in);
