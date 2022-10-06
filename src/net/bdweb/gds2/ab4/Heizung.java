@@ -16,7 +16,7 @@ public class Heizung {
         System.out.print("Bitte gebe die Raumtemperatur ein: ");
         raumtemperatur = sc.nextInt();
 
-        // Verarbeitung & Ausgabe
+        // Ausgabe
         if (raumtemperatur < heiztemperatur) {
             System.out.println("Die Heizung heizt!");
         } else {
