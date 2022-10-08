@@ -1,6 +1,8 @@
+package net.bdweb.gds2.pr1_40_datentypen_variablen;
+
 import java.util.Scanner; // Imortanweisung für die Scannerklasse
 
-public class ScannerTest {
+public class ab45_advanced_scanner {
 	
 	public static void main(String[] args) {
 		// Scanner anlegen

@@ -1,5 +1,6 @@
+package net.bdweb.gds2.sonstiges;
 
-public class VariablenBsp {
+public class VerschiedeneVariablenTypen {
 
 	public static void main(String[] args) {
 		

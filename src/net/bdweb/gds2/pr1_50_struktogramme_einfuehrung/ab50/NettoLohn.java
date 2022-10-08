@@ -1,4 +1,4 @@
-package net.bdweb.gds2.ab3;
+package net.bdweb.gds2.pr1_50_struktogramme_einfuehrung.ab50;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

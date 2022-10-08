@@ -1,4 +1,4 @@
-package net.bdweb.gds2.ab4;
+package net.bdweb.gds2.pr1_60_if_verzweigungen.ab20;
 
 import java.util.Scanner;
 

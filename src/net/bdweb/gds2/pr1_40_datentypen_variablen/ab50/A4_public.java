@@ -1,4 +1,4 @@
-package net.bdweb.gds2.ab2;
+package net.bdweb.gds2.pr1_40_datentypen_variablen.ab50;
 
 import java.util.Scanner;
 

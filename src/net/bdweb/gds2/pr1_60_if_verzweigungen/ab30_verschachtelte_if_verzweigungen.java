@@ -1,6 +1,8 @@
+package net.bdweb.gds2.pr1_60_if_verzweigungen;
+
 import java.util.Scanner;
 
-public class VerschachtelteIfBedingungen {
+public class ab30_verschachtelte_if_verzweigungen {
 
     public static void main(String[] args) {
 

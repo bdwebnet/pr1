@@ -1,6 +1,5 @@
-package net.bdweb.gds2.ab1;
+package net.bdweb.gds2.sonstiges;
 
-import java.util.Formatter;
 import java.util.Scanner;
 
 public class Biertank {
