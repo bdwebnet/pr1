@@ -40,16 +40,18 @@ public class a01_c {
 
         if (input_pin != static_pin) {
 
-            // Eingabe
-            System.out.print("Bitte geben Sie Ihren vierstellige PUK ein: ");
-            input_puk = sc.nextInt();
+            do {
+                // Eingabe
+                System.out.print("Bitte geben Sie Ihren vierstellige PUK ein: ");
+                input_puk = sc.nextInt();
 
-            // Verarbeitung & Ausgabe
-            if (input_puk == static_puk) {
-                System.out.println("Ihr PUK ist richtig!");
-            } else {
-                System.out.println("Ihr PUK ist falsch! Bitte erneut versuchen.");
-            }
+                // Verarbeitung & Ausgabe
+                if (input_puk == static_puk) {
+                    System.out.println("Ihr PUK ist richtig!");
+                } else {
+                    System.out.println("Ihr PUK ist falsch! Bitte erneut versuchen.");
+                }
+            } while (input_puk != static_puk);
 
         }
 
