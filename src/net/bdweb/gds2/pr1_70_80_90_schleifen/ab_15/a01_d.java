@@ -23,10 +23,10 @@ public class a01_d {
                 input_pin = sc.nextInt();
 
                 // Verarbeitung & Ausgabe
-                if (input_pin < 1000 || input_pin > 9999) {
+                if (String.valueOf(input_pin).length() != 4) {
                     System.out.println("Der PIN war nicht vierstellig! Bitte geben Sie ihn erneut ein!");
                 }
-            } while (input_pin < 1000 || input_pin > 9999);
+            } while (String.valueOf(input_pin).length() != 4);
 
             // Verarbeitung & Ausgabe
             tries++;
