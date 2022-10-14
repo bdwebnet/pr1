@@ -35,12 +35,11 @@ public class a04 {
             // Ausgabe
             System.out.println("Breite: " + breite + "; Hoehe: " + hoehe + "; Flaeche: " + flaeche + "\n");
 
-            if (flaeche <= 0) {
-                System.out.println("\nFertig!");
-                break;
-            }
+            if (flaeche <= 0) break;
 
         }
+
+        System.out.println("Fertig!");
 
         // Scanner schließen
         sc.close();
