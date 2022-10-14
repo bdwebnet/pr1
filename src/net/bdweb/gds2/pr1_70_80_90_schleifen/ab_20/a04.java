@@ -33,9 +33,9 @@ public class a04 {
             flaeche = breite * hoehe;
 
             // Ausgabe
-            if (flaeche > 0) {
-                System.out.println("Breite: " + breite + "; Hoehe: " + hoehe + "; Flaeche: " + flaeche + "\n");
-            } else {
+            System.out.println("Breite: " + breite + "; Hoehe: " + hoehe + "; Flaeche: " + flaeche + "\n");
+
+            if (flaeche <= 0) {
                 System.out.println("\nFertig!");
                 break;
             }
