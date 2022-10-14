@@ -12,6 +12,8 @@ public class a04 {
         // Scanner initialisieren
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("CAD Programm");
+
         while (true) {
 
             // Eingabe
