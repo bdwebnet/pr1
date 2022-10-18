@@ -4,7 +4,7 @@ public class a02 {
 
     public static void main(String[] args) {
 
-        for (int i = 100; i >= 0 ; i--) {
+        for (int i = 10; i >= 0 ; i--) {
             System.out.print(i);
 
             for (int z = i-1; z >= 0 ; z--) {
