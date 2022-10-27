@@ -24,6 +24,8 @@ public class a01 {
             System.out.println("Index: " + i + ",\tInhalt: " + eingegebene_zahlen[i]);
         }
 
+        sc.close();
+
     }
 
 }

@@ -45,6 +45,8 @@ public class a03 {
             }
         }
 
+        sc.close();
+
     }
 
 }
