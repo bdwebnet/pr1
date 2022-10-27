@@ -26,11 +26,13 @@ public class ChristbaumNeu {
         max_sterne = (int) max_sterne/2 + 1;
          */
 
-        if (asthoehe > aeste) {
+        /*if (asthoehe > aeste) {
             max_sterne = asthoehe + ( (aeste-1) * (aeste ^ (aeste+3)) );
         } else {
             max_sterne = asthoehe + ( (aeste-1) * (aeste ^ (aeste+1)) );
-        }
+        }*/
+
+        max_sterne = 2 * aeste * asthoehe - 4 * aeste + 3;
 
         // Für jeden Ast
         for (int i = 0; i < aeste; i++) {
