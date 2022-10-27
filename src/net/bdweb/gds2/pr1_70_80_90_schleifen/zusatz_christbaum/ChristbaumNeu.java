@@ -21,6 +21,11 @@ public class ChristbaumNeu {
         // Leere Zeile
         System.out.println("");
 
+        /*
+        max_sterne = ( 2 * aeste - 1 ) + ( asthoehe - 1 ) * ( 2 * aeste - 4 );
+        max_sterne = (int) max_sterne/2 + 1;
+         */
+
         if (asthoehe > aeste) {
             max_sterne = asthoehe + ( (aeste-1) * (aeste ^ (aeste+3)) );
         } else {
