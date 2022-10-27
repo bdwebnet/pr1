@@ -13,15 +13,13 @@ public class a03 {
         double durchschnitt = 0;
 
         Scanner sc = new Scanner(System.in);
-        DecimalFormat df = new DecimalFormat("#.00");
+        DecimalFormat df = new DecimalFormat("#.0");
 
         // Eingabe
         for (int i = 0; i < schuelernamen.length; i++) {
             System.out.print("Bitte gebe den Namen von Schüler-Nr. " + (i+1) + " ein: ");
             schuelernamen[i] = sc.next();
-        }
-        
-        for (int i = 0; i < noten.length; i++) {
+
             System.out.print("Bitte gebe die Note von " + schuelernamen[i] + " ein: ");
             noten[i] = sc.nextDouble();
             durchschnitt += noten[i];
