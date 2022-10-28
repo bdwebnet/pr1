@@ -13,10 +13,13 @@ public class a01 {
 
         // Eingabe
         for (int i = 0; i < eingegebene_zahlen.length; i++) {
-            do {
-                System.out.print("Bitte gebe eine Zahl ein: ");
-                eingegebene_zahlen[i] = sc.nextInt();
-            } while (eingegebene_zahlen[i] < 0 || eingegebene_zahlen[i] > 100);
+            System.out.print("Bitte gebe eine Zahl ein: ");
+            eingegebene_zahlen[i] = sc.nextInt();
+
+            if (eingegebene_zahlen[i] < 0 || eingegebene_zahlen[i] > 100) {
+                System.out.println("Ungültige Eingabe. Bitte erneut versuchen.");
+                i--;
+            }
         }
 
         // Ausgabe
