@@ -12,6 +12,8 @@ public class Starter {
 
         System.out.println(bier.berechneBestellmenge());
 
+        Auto jaguarAndi = new Auto(4, "schwarz");
+
     }
 
 }
