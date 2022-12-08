@@ -1,6 +1,7 @@
 package net.bdweb.gds2.pr1_x190_strings_bearbeiten.ab20;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Aufgabe04 {
 
@@ -26,7 +27,12 @@ public class Aufgabe04 {
     }
 
     public static void main(String[] args) {
-        System.out.println(ErzeugeZufaelligesPasswort(10));
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Bitte Passwortlänge eingeben: ");
+        int length = sc.nextInt();
+
+        System.out.println(ErzeugeZufaelligesPasswort(length));
     }
 
 }
