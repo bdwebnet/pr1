@@ -5,11 +5,7 @@ import java.util.Scanner;
 public class Aufgabe02 {
 
     public static String TextOhneVokale(String input) {
-        String output = input;
-
-        output = output.replaceAll("[AaEeIiOoUu]", "");
-
-        return output;
+        return input.replaceAll("[AaEeIiOoUu]", "");
     }
 
     public static void main(String[] args) {

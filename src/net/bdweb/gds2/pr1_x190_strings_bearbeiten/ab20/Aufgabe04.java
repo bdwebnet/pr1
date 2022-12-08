@@ -5,23 +5,21 @@ import java.util.Random;
 public class Aufgabe04 {
 
     public static String ErzeugeZufaelligesPasswort(int length) {
-        String abc = "abcdefghijklmnopqrstuvwxyz";
-        String zahlen = "1234567890";
-
-        String auswahl = abc.concat(abc.toUpperCase()).concat(zahlen);
+        String auswahl = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
         String passwort = "";
 
         Random rand = new Random();
 
-        if (length > 5) {
+        if (length >= 5) {
             for (int i = 0; i < length; i++) {
-                char neuesZeichen = auswahl.charAt(rand.nextInt(auswahl.length()));
+                int zufaelligeZahl = rand.nextInt(auswahl.length());
+                char neuesZeichen = auswahl.charAt(zufaelligeZahl);
 
                 passwort = passwort.concat(String.valueOf(neuesZeichen));
             }
         } else {
-            return "Bitte gebe eine Länge größer als 5 an.";
+            return "Error: Passwortlänge kleiner als 5! Das Passwort muss aus mindestens fünf Zeichen bestehen.";
         }
 
         return passwort;
