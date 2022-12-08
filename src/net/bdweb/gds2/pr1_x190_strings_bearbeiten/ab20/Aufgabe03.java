@@ -7,13 +7,13 @@ public class Aufgabe03 {
     public static String reverse(String string) {
         char[] array = string.toCharArray();
 
-        string = "";
+        String output = "";
 
         for (int i = array.length - 1; i >= 0; i--) {
-            string = string.concat(String.valueOf(array[i]));
+            output = output.concat(String.valueOf(array[i]));
         }
 
-        return string;
+        return output;
 
         /*
         Alternative Lösung mit zwei Laufzeitvariablen:
