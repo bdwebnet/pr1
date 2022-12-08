@@ -7,11 +7,25 @@ public class Aufgabe03 {
     public static String reverse(String string) {
         char[] array = string.toCharArray();
 
+        string = "";
+
         for (int i = array.length - 1; i >= 0; i--) {
             string = string.concat(String.valueOf(array[i]));
         }
 
         return string;
+
+        /*
+        Alternative Lösung mit zwei Laufzeitvariablen:
+
+        for (int i = 0, j = array.length - 1; i < array.length/2; i++, j--) {
+            char temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+
+        return new String(array);
+        */
     }
 
     public static void main(String[] args) {
