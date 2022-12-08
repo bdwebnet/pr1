@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Aufgabe03 {
 
-    public static String reverse(String string) {
-        char[] array = string.toCharArray();
+    public static String reverse(String input) {
+        char[] array = input.toCharArray();
 
         String output = "";
 
