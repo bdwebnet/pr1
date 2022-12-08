@@ -5,15 +5,14 @@ import java.util.Scanner;
 
 public class Aufgabe03 {
 
-    public static String Reverse(String input) {
-        char[] array = input.toCharArray();
-        String output = "";
+    public static String Reverse(String string) {
+        char[] array = string.toCharArray();
 
         for (int i = array.length - 1; i >= 0; i--) {
-            output = output.concat(String.valueOf(array[i]));
+            string = string.concat(String.valueOf(array[i]));
         }
 
-        return output;
+        return string;
     }
 
     public static void main(String[] args) {

@@ -4,18 +4,16 @@ import java.util.Scanner;
 
 public class Aufgabe02 {
 
-    public static String TextOhneVokale(String input) {
+    public static String TextOhneVokale(String string) {
         // RegEx-Methode: return input.replaceAll("[AaEeIiOoUu]", "");
 
         String[] vokale = {"A", "E", "I", "O", "U", "a", "e", "i", "o", "u"};
 
-        String output = input;
-
         for (String vokal : vokale) {
-            output = output.replace(vokal, "");
+            string = string.replace(vokal, "");
         }
 
-        return output;
+        return string;
     }
 
     public static void main(String[] args) {
