@@ -1,6 +1,5 @@
 package net.bdweb.gds2.pr1_x190_strings_bearbeiten.ab20;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Aufgabe03 {
