@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Aufgabe02 {
 
-    public static String TextOhneVokale(String string) {
+    public static String textOhneVokale(String string) {
         // RegEx-Methode: return input.replaceAll("[AaEeIiOoUu]", "");
 
         String[] vokale = {"A", "E", "I", "O", "U", "a", "e", "i", "o", "u"};
@@ -22,7 +22,7 @@ public class Aufgabe02 {
         System.out.print("Bitte Text mit Vokalen eingeben: ");
         String input = sc.nextLine();
 
-        System.out.println(TextOhneVokale(input));
+        System.out.println(textOhneVokale(input));
     }
 
 }

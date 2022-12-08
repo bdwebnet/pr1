@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Aufgabe01 {
 
-    public static String LeerzeichenEntfernenAusString(String input) {
+    public static String leerzeichenEntfernenAusString(String input) {
         return input.replace(" ", "");
     }
 
@@ -14,7 +14,7 @@ public class Aufgabe01 {
         System.out.print("Bitte Text mit Leerzeichen eingeben: ");
         String input = sc.nextLine();
 
-        System.out.println(LeerzeichenEntfernenAusString(input));
+        System.out.println(leerzeichenEntfernenAusString(input));
     }
 
 }

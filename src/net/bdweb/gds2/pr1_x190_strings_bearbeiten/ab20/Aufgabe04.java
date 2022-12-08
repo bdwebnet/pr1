@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Aufgabe04 {
 
-    public static String ErzeugeZufaelligesPasswort(int length) {
+    public static String erzeugeZufaelligesPasswort(int length) {
         String auswahl = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
         String passwort = "";
@@ -32,7 +32,7 @@ public class Aufgabe04 {
         System.out.print("Bitte Passwortlänge eingeben: ");
         int length = sc.nextInt();
 
-        System.out.println(ErzeugeZufaelligesPasswort(length));
+        System.out.println(erzeugeZufaelligesPasswort(length));
     }
 
 }

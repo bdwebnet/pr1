@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Aufgabe03 {
 
-    public static String Reverse(String string) {
+    public static String reverse(String string) {
         char[] array = string.toCharArray();
 
         for (int i = array.length - 1; i >= 0; i--) {
@@ -21,7 +21,7 @@ public class Aufgabe03 {
         System.out.print("Bitte Text eingeben: ");
         String input = sc.nextLine();
 
-        System.out.println(Reverse(input));
+        System.out.println(reverse(input));
     }
 
 }
