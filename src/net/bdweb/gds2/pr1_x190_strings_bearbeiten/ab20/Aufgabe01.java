@@ -15,6 +15,8 @@ public class Aufgabe01 {
         String input = sc.nextLine();
 
         System.out.println(leerzeichenEntfernenAusString(input));
+
+        sc.close();
     }
 
 }

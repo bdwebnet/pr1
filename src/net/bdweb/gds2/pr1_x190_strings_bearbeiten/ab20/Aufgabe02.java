@@ -23,6 +23,8 @@ public class Aufgabe02 {
         String input = sc.nextLine();
 
         System.out.println(textOhneVokale(input));
+
+        sc.close();
     }
 
 }

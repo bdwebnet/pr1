@@ -21,6 +21,8 @@ public class Aufgabe03 {
         String input = sc.nextLine();
 
         System.out.println(reverse(input));
+
+        sc.close();
     }
 
 }

@@ -33,6 +33,8 @@ public class Aufgabe04 {
         int length = sc.nextInt();
 
         System.out.println(erzeugeZufaelligesPasswort(length));
+
+        sc.close();
     }
 
 }
