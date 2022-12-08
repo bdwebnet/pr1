@@ -7,7 +7,7 @@ public class Aufgabe02 {
     public static String TextOhneVokale(String input) {
         String output = input;
 
-        output = output.replaceAll("[aeiou]", "");
+        output = output.replaceAll("[AaEeIiOoUu]", "");
 
         return output;
     }

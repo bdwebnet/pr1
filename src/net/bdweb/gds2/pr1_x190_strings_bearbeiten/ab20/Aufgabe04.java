@@ -16,7 +16,7 @@ public class Aufgabe04 {
 
         if (length > 5) {
             for (int i = 0; i < length; i++) {
-                char neuesZeichen = auswahl.toCharArray()[rand.nextInt(auswahl.length())];
+                char neuesZeichen = auswahl.charAt(rand.nextInt(auswahl.length()));
 
                 passwort = passwort.concat(String.valueOf(neuesZeichen));
             }
