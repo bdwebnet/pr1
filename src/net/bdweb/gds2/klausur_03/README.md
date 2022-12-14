@@ -25,9 +25,8 @@ Diese Methode gibt den String mit umgekehrten Buchstaben zurück.
 Erstelle eine ToDo-Liste!
 Verwende statische Methoden, um den Code übersichtlicher zu gestalten.
 
-Der Nutzer soll die Möglichkeit haben,
-solange neue Aufgaben einzugeben, bis er `fertig` eingibt
-(Groß- und Kleinschreibung ignorieren).
+Der Nutzer gibt zuerst ein, wie viele Aufgaben er insgesamt eingeben möchte.
+Anschließend gibt er die einzelnen Aufgaben ein.
 
 Anschließend werden alle eingegebenen Aufgaben (alle sind unerledigt)
 mit einem `☒` als Aufzählungszeichen
