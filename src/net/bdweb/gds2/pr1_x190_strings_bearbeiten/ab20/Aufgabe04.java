@@ -8,7 +8,7 @@ public class Aufgabe04 {
     public static String erzeugeZufaelligesPasswort(int length) {
         String auswahl = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-        String passwort = "";
+        StringBuilder passwort = new StringBuilder();
 
         Random rand = new Random();
 
@@ -17,13 +17,13 @@ public class Aufgabe04 {
                 int zufaelligeZahl = rand.nextInt(auswahl.length());
                 char neuesZeichen = auswahl.charAt(zufaelligeZahl);
 
-                passwort = passwort.concat(String.valueOf(neuesZeichen));
+                passwort.append(String.valueOf(neuesZeichen));
             }
         } else {
             return "Error: Passwortlänge kleiner als 5! Das Passwort muss aus mindestens fünf Zeichen bestehen.";
         }
 
-        return passwort;
+        return passwort.toString();
     }
 
     public static void main(String[] args) {
