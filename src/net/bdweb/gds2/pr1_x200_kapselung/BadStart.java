@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 
 public class BadStart {
 
-    public static void main(String[] args) {
+    public static void main ( String[] args ) {
 
         DecimalFormat moneyFormat = new DecimalFormat("#.00 €");
 
@@ -15,14 +15,16 @@ public class BadStart {
         System.out.println("Lisas Kontonummer:\t" + lisasKonto.getKontonummer());
         System.out.println("Lisas Kontostand:\t" + moneyFormat.format(lisasKonto.getKontostand()));
 
-        System.out.println("");
+        System.out.println();
 
         System.out.println("Jessicas Kontonummer:\t" + jessisKonto.getKontonummer());
         System.out.println("Jessicas Kontostand:\t" + moneyFormat.format(jessisKonto.getKontostand()));
 
-        System.out.println("");
+        System.out.println();
 
         System.out.println("KontoCounter:\t\t\t" + Konto.kontoCounter);
+
+        jessisKonto.abheben(500);
 
     }
 
