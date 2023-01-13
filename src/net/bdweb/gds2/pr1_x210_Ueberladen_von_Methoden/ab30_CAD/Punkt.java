@@ -2,22 +2,26 @@ package net.bdweb.gds2.pr1_x210_Ueberladen_von_Methoden.ab30_CAD;
 
 public class Punkt {
 
-    private int norm;
+    // Objekt-Variablen
+    private int norm; // 0 = normal, 1 = Manhatten-Methode
     private double x;
     private double y;
 
+    /**
+     * Konstruktor
+     *
+     * @param x x-Koordinate
+     * @param y y-Koordinate
+     */
     public Punkt ( double x, double y ) {
         this.x = x;
         this.y = y;
         this.norm = 0;
     }
 
-    public static void punkteGleich ( Punkt p1, Punkt p2 ) {
-        if ( p1.getX() == p2.getX() && p1.getY() == p2.getY() ) {
-            System.out.println("Die Punkte sind gleich.");
-        } else {
-            System.out.println("Die Punkte sind nicht gleich.");
-        }
+    // Gleichheit prüfen
+    public boolean gleichheit ( Punkt p2 ) {
+        return this.getX() == p2.getX() && this.getY() == p2.getY();
     }
 
     public void dist ( Punkt p2 ) {
@@ -33,10 +37,14 @@ public class Punkt {
     }
 
     public double getX () {
-        return x;
+        return this.x;
     }
 
     public void setX ( double x ) {
+        this.x = x;
+    }
+
+    public void setX ( int x ) {
         this.x = x;
     }
 
@@ -45,10 +53,14 @@ public class Punkt {
     }
 
     public double getY () {
-        return y;
+        return this.y;
     }
 
     public void setY ( double y ) {
+        this.y = y;
+    }
+
+    public void setY ( int y ) {
         this.y = y;
     }
 
@@ -61,12 +73,24 @@ public class Punkt {
         System.out.println("Punkt: (" + this.getX() + ", " + this.getY() + ")");
     }
 
-    public void xSpiegeln () {
-        this.x = -this.x;
+    /**
+     * Spiegelt die y-Koordinate an der x-Achse und gibt die geändert y-Koordinate zurück.
+     *
+     * @return y
+     */
+    public double spiegelnAnXAchse () {
+        this.y *= -1;
+        return this.getY();
     }
 
-    public void ySpiegeln () {
-        this.y = -this.y;
+    /**
+     * Spiegelt die x-Koordinate an der y-Achse und gibt die geändert x-Koordinate zurück.
+     *
+     * @return x
+     */
+    public double spiegelnAnYAchse () {
+        this.x *= -1;
+        return this.getX();
     }
 
 }
