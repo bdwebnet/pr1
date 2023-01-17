@@ -19,21 +19,51 @@ public class Punkt {
         this.norm = 0;
     }
 
-    // Gleichheit prüfen
-    public boolean gleichheit ( Punkt p2 ) {
-        return this.getX() == p2.getX() && this.getY() == p2.getY();
-    }
-
-    public void dist ( Punkt p2 ) {
+    /**
+     * Distanz zwischen zwei Punkten berechnen (als statische Methode)
+     *
+     * @param p1 Zu vergleichender Punkt
+     * @param p2 Zu vergleichender Punkt
+     * @return distance
+     */
+    public static double dist ( Punkt p1, Punkt p2 ) {
         double dist;
 
-        if ( this.norm == 0 ) {
-            dist = Math.sqrt(Math.pow(this.getX() - p2.getX(), 2) + Math.pow(this.getY() - p2.getY(), 2));
+        if ( p1.getNorm() == 0 ) {
+            dist = Math.sqrt(Math.pow(( p1.getX() - p2.getX() ), 2) + Math.pow(( p1.getY() - p2.getY() ), 2));
+        } else {
+            dist = Math.abs(p1.getX() - p2.getX()) + Math.abs(p1.getY() - p2.getY());
+        }
+
+        return dist;
+    }
+
+    /**
+     * Distanz zwischen zwei Punkten berechnen (als Klassen-Methode)
+     *
+     * @param p2 Zu vergleichender Punkt
+     * @return distance
+     */
+    public double dist ( Punkt p2 ) {
+        double dist;
+
+        if ( this.getNorm() == 0 ) {
+            dist = Math.sqrt(Math.pow(( this.getX() - p2.getX() ), 2) + Math.pow(( this.getY() - p2.getY() ), 2));
         } else {
             dist = Math.abs(this.getX() - p2.getX()) + Math.abs(this.getY() - p2.getY());
         }
 
-        System.out.println("Abstand zwischen Punkten: " + dist);
+        return dist;
+    }
+
+    /**
+     * Gleichheit von zwei Punkten prüfen
+     *
+     * @param p2 Zu vergleichender Punkt
+     * @return gleichheit (haben Punkte die gleichen Koordinaten)
+     */
+    public boolean gleichheit ( Punkt p2 ) {
+        return this.getX() == p2.getX() && this.getY() == p2.getY();
     }
 
     public double getX () {
@@ -46,6 +76,10 @@ public class Punkt {
 
     public void setX ( int x ) {
         this.x = x;
+    }
+
+    public int getNorm () {
+        return this.norm;
     }
 
     public void setNorm ( int norm ) {
@@ -64,10 +98,18 @@ public class Punkt {
         this.y = y;
     }
 
+    /**
+     * Gibt Punkt-Kordinaten aus.
+     */
     public void drucken () {
         System.out.println("Punkt: (" + this.getX() + ", " + this.getY() + ")");
     }
 
+    /**
+     * Gibt Punkt-Koordinaten mit zusätzlichem Text aus.
+     *
+     * @param text Text, der mit ausgegeben werden soll
+     */
     public void drucken ( String text ) {
         System.out.println(text);
         System.out.println("Punkt: (" + this.getX() + ", " + this.getY() + ")");
