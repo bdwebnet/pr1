@@ -31,8 +31,11 @@ public class Punkt {
 
         if ( p1.getNorm() == 0 ) {
             dist = Math.sqrt(Math.pow(( p1.getX() - p2.getX() ), 2) + Math.pow(( p1.getY() - p2.getY() ), 2));
-        } else {
+        } else if ( p1.getNorm() == 1 ) {
             dist = Math.abs(p1.getX() - p2.getX()) + Math.abs(p1.getY() - p2.getY());
+        } else {
+            System.out.println("Norm nicht definiert!");
+            dist = 0;
         }
 
         return dist;
@@ -49,8 +52,11 @@ public class Punkt {
 
         if ( this.getNorm() == 0 ) {
             dist = Math.sqrt(Math.pow(( this.getX() - p2.getX() ), 2) + Math.pow(( this.getY() - p2.getY() ), 2));
-        } else {
+        } else if ( this.getNorm() == 1 ) {
             dist = Math.abs(this.getX() - p2.getX()) + Math.abs(this.getY() - p2.getY());
+        } else {
+            System.out.println("Norm nicht definiert!");
+            dist = 0;
         }
 
         return dist;
