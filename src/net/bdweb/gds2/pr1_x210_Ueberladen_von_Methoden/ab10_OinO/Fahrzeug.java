@@ -2,16 +2,16 @@ package net.bdweb.gds2.pr1_x210_Ueberladen_von_Methoden.ab10_OinO;
 
 public class Fahrzeug {
 
-    private final String fahrzeugart;
-    private final int gewicht;
-    private final boolean automatikgetriebe;
-    private final int kw;
-    private final String farbe;
-    private final int anzahl_der_plaetze;
-    private final String modell;
-    private final String marke;
-    private final double mietpreis;
-    private final String kennzeichen;
+    private String fahrzeugart;
+    private int gewicht;
+    private boolean automatikgetriebe;
+    private int kw;
+    private String farbe;
+    private int anzahl_der_plaetze;
+    private String modell;
+    private String marke;
+    private double mietpreis;
+    private String kennzeichen;
     private int aktuell_kilometerstand;
     private int anfangs_kilometerstand;
     private boolean vermietet;
@@ -37,7 +37,7 @@ public class Fahrzeug {
     }
 
     public double berechneMietkosten () {
-        double kosten;
+        double kosten = 0;
         return kosten;
     }
 
