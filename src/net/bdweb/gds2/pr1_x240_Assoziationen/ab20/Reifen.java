@@ -2,6 +2,10 @@ package net.bdweb.gds2.pr1_x240_Assoziationen.ab20;
 
 public class Reifen {
 
+    /**
+     *
+     */
+
     private double durchmesser;
     private double profiltiefe;
     private String jahreszeit;

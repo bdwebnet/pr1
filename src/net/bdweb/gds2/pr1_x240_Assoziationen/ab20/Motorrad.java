@@ -3,12 +3,11 @@ package net.bdweb.gds2.pr1_x240_Assoziationen.ab20;
 public class Motorrad {
 
     private Motor meinMotor;
-    private Reifen[] meineReifen;
+    private Reifen[] meineReifen = new Reifen[2];
 
     public Motorrad ( Motor pMotor, Reifen pVorne, Reifen pHinten ) {
         this.meinMotor = pMotor;
 
-        this.meineReifen = new Reifen[2];
         this.meineReifen[0] = pVorne;
         this.meineReifen[1] = pHinten;
     }
@@ -18,11 +17,18 @@ public class Motorrad {
     }
 
     public Reifen getVorderreifen () {
-        return this.meineReifen[0];
+        return this.meineReifen[0]; // meineReifen[0] ist der Vorderreifen
     }
 
     public Reifen getHinterreifen () {
-        return this.meineReifen[1];
+        return this.meineReifen[1]; // meineReifen[1] ist der Vorderreifen
+    }
+
+    public void gibInfo () {
+        System.out.println("Motorrad:");
+        this.getMotor().gibInfo();
+        this.getVorderreifen().gibInfo();
+        this.getHinterreifen().gibInfo();
     }
 
 }
