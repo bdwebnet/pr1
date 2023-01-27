@@ -15,3 +15,4 @@ Hier findest du Übungsaufgaben für die 4. Klausur in PR1.
 ## Aufgaben
 
 1. [Autovermietung](aufgabe01)
+2. [Münzsammlung](aufgabe02)
