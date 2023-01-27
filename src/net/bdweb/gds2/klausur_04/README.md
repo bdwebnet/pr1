@@ -16,3 +16,4 @@ Hier findest du Übungsaufgaben für die 4. Klausur in PR1.
 
 1. [Autovermietung](aufgabe01) (Überladen von Methoden, Objekte in Objekte)
 2. [Münzsammlung](aufgabe02) (Aufzählungstypen)
+3. [Code kommentieren](aufgabe03) (Javadoc)
