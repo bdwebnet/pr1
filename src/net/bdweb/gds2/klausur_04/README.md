@@ -1,6 +1,4 @@
-# Übungsaufgaben für die 4. Klausur
-
-Hier findest du Übungsaufgaben für die 4. Klausur in PR1.
+# 4. Programmieren-Klausur
 
 ## Klausurthemen
 
@@ -12,7 +10,7 @@ Hier findest du Übungsaufgaben für die 4. Klausur in PR1.
 - Rekursion
 - Vererbung
 
-## Aufgaben
+## Übungsaufgaben
 
 1. [Autovermietung](aufgabe01) (Überladen von Methoden, Objekte in Objekte)
 2. [Münzsammlung](aufgabe02) (Aufzählungstypen)
