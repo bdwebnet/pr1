@@ -15,7 +15,8 @@ Hier findest du Übungsaufgaben für die 4. Klausur in PR1.
 ## Aufgabe 1: Autovermietung
 
 Du sollst eine Software für eine Autovermietung programmieren.
-Erstelle die Klassen nach folgendem Schema
+Erstelle die Klassen nach folgendem Schema,
+implementiere die hervorgehenden Funktionalitäten
 und ergänze eine Klasse ```Tester```, um die Software zu testen.
 
 ```mermaid
