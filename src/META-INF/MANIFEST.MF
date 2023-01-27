@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Main-Class: net.bdweb.gds2.pr1_x240_Assoziationen.ab20.Motorradtest
