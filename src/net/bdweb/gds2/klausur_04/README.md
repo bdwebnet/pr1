@@ -15,6 +15,8 @@
 1. [Autovermietung](aufgabe01) (Überladen von Methoden, Objekte in Objekte)
 2. [Münzsammlung](aufgabe02) (Aufzählungstypen)
 3. [Code kommentieren](aufgabe03) (Javadoc)
+4. [Aufgabe 4](aufgabe04)
+5. [Aufgabe 5](aufgabe05)
 
 ## Zusatzaufgaben vom Lehrer
 
