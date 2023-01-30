@@ -16,16 +16,16 @@ und ergänze eine Klasse `Tester`, um die Software zu testen.
       }
       
       class Fahrzeug {
-        -String hersteller
-        -String name
+        -String marke
+        -String modell
         -Kunde ausleihenderKunde
         +Fahrzeug()
-        +Fahrzeug(String name)
-        +Fahrzeug(String hersteller, String name)
-        +setHersteller(String hersteller)
-        +getHersteller() String
-        +setName(String name)
-        +getName() String
+        +Fahrzeug(String modell)
+        +Fahrzeug(String marke, String modell)
+        +setMarke(String marke)
+        +getMarke() String
+        +setModell(String modell)
+        +getModell() String
         +setAusleihenderKunde(Kunde kunde)
         +getAusleihenderKunde() Kunde
       }
