@@ -21,4 +21,6 @@
 ## Zusatzaufgaben vom Lehrer
 
 Meine Lösungen zu den Zusatzaufgaben vom Lehrer zum Thema Rekursion
-sind [hier](../pr1_x270_Rekursion_JavaEinf/ab40_zusatzaufgaben) zu finden.
+sind
+unter [src/net/bdweb/gds2/pr1_x270_Rekursion_JavaEinf/ab40_zusatzaufgaben](../pr1_x270_Rekursion_JavaEinf/ab40_zusatzaufgaben)
+zu finden.
