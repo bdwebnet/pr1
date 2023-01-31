@@ -35,3 +35,29 @@ public class Tester {
 
 }
 ```
+
+## Aufgabe 3
+
+```mermaid
+classDiagram
+
+class Angestellter {
+    -name: String
+}
+
+class Abteilung {
+    -angestelltenListe: Angestellter[]
+    +angestelltenHinzufuegen(Angestellter angestellter)
+    +angestelltenLoeschen(Angestellter angestellter)
+    +zeigeAlleAngestellten()
+}
+
+Abteilung --> "*" Angestellter
+```
+
+Setzen Sie dieses Klassendiagramm programmiertechnisch um.
+(Natürlich hat jede Klasse zwei sinnvolle Attribute, z.B. "`name`" o.ä.
+Die Liste wird in unserem Fall als Array umgesetzt.)
+
+Schreiben Sie außerdem in der Klasse `Abteilung` Methoden, um neue
+Angestellte hinzuzufügen oder zu löschen
