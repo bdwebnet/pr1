@@ -5,6 +5,12 @@ public class Auszubildender extends Mitarbeiter {
     private String ausbildungsberuf;
     private int ausbildungsjahr;
 
+    public Auszubildender ( String name, String vorname, double gehalt, String ausbildungsberuf, int ausbildungsjahr ) {
+        super(name, vorname, gehalt);
+        this.ausbildungsberuf = ausbildungsberuf;
+        this.ausbildungsjahr = ausbildungsjahr;
+    }
+
     public String getAusbildungsberuf () {
         return ausbildungsberuf;
     }

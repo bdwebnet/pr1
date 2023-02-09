@@ -6,6 +6,15 @@ public class Mitarbeiter {
     protected String vorname;
     protected double gehalt;
 
+    public Mitarbeiter () {
+    }
+
+    public Mitarbeiter ( String name, String vorname, double gehalt ) {
+        this.name = name;
+        this.vorname = vorname;
+        this.gehalt = gehalt;
+    }
+
     public String getName () {
         return name;
     }
