@@ -9,48 +9,38 @@ public class SchulTester {
         System.out.println("Du baust eine Schule!");
 
         System.out.println("Erstelle einen Menschen:");
-        String name = getName();
-        int alter = getAlter();
+        String name = getScannedString("Bitte gebe einen Namen ein: ");
+        int alter = getScannedInt("Bitte gebe ein Alter ein: ");
         Mensch deinMensch = new Mensch(name, alter);
 
         System.out.println("Erstelle einen Lehrer:");
-        name = getName();
-        alter = getAlter();
-        System.out.print("Bitte gebe ein Unterrichtsfach ein: ");
-        String fach = getScannedString();
+        name = getScannedString("Bitte gebe einen Namen ein: ");
+        alter = getScannedInt("Bitte gebe ein Alter ein: ");
+        String fach = getScannedString("Bitte gebe ein Unterrichtsfach ein: ");
         Lehrer deinLehrer = new Lehrer(name, alter, fach);
 
         System.out.println("Erstelle einen Schüler:");
-        name = getName();
-        alter = getAlter();
-        System.out.print("Bitte gebe eine Klassenstufe ein: ");
-        int stufe = getScannedInt();
+        name = getScannedString("Bitte gebe einen Namen ein: ");
+        alter = getScannedInt("Bitte gebe ein Alter ein: ");
+        int stufe = getScannedInt("Bitte gebe eine Klassenstufe ein: ");
         Schueler deinSchueler = new Schueler(name, alter, stufe);
 
     }
 
-    public static int getScannedInt () {
+    public static int getScannedInt ( String question ) {
         Scanner sc = new Scanner(System.in);
+        System.out.print(question);
         int returnInt = sc.nextInt();
         sc.close();
         return returnInt;
     }
 
-    public static String getScannedString () {
+    public static String getScannedString ( String question ) {
         Scanner sc = new Scanner(System.in);
+        System.out.print(question);
         String returnString = sc.next();
         sc.close();
         return returnString;
-    }
-
-    public static String getName () {
-        System.out.print("Bitte gebe einen Namen ein: ");
-        return getScannedString();
-    }
-
-    public static int getAlter () {
-        System.out.print("Bitte gebe ein Alter ein: ");
-        return getScannedInt();
     }
 
 }
