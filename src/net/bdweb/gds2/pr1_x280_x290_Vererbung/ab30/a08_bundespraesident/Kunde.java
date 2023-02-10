@@ -1,4 +1,4 @@
-package net.bdweb.gds2.pr1_x280_x290_Vererbung.ab30.bundespraesident;
+package net.bdweb.gds2.pr1_x280_x290_Vererbung.ab30.a08_bundespraesident;
 
 public class Kunde {
 
