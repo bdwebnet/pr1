@@ -11,7 +11,7 @@ public class Rechnung {
     }
 
     protected double bruttobetragBerechnen () {
-        return gesamtbetrag + gesamtbetrag * 0.19;
+        return this.gesamtbetrag + this.gesamtbetrag * 0.19;
     }
 
 }

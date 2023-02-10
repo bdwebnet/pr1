@@ -9,4 +9,9 @@ public class RabattierteRechnung extends Rechnung {
         this.rabatt = rabatt;
     }
 
+    @Override
+    protected double bruttobetragBerechnen () {
+        return this.gesamtbetrag + ( this.gesamtbetrag - this.rabatt ) * 0.19;
+    }
+
 }
