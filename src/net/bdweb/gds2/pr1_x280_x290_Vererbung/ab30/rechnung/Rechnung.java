@@ -1,4 +1,4 @@
-package net.bdweb.gds2.pr1_x280_x290_Vererbung.ab20.rechnung;
+package net.bdweb.gds2.pr1_x280_x290_Vererbung.ab30.rechnung;
 
 public class Rechnung {
 
