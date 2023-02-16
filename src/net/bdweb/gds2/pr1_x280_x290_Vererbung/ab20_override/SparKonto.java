@@ -38,4 +38,26 @@ public class SparKonto extends Bankkonto {
         this.kontoStand = this.kontoStand * ( 1 + this.zinsSatz );
     }
 
+    /**
+     * Methode zum Geld-Einzahlen
+     *
+     * @param x Einzahlungsbetrag
+     * @since 1.0
+     */
+    @Override
+    public void einzahlen ( double x ) {
+        this.kontoStand += x;
+    }
+
+    /**
+     * Methode zum Geld-Abheben
+     *
+     * @param x Abhebungsbetrag
+     * @since 1.0
+     */
+    @Override
+    public void abheben ( double x ) {
+        this.kontoStand -= x;
+    }
+
 }

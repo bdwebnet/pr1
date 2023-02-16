@@ -1,5 +1,5 @@
 /**
- * Bankkonto
+ * Bankkonto (abstrakt)
  *
  * @author BD
  * @version 1.0
@@ -7,7 +7,7 @@
 
 package net.bdweb.gds2.pr1_x280_x290_Vererbung.ab20_override;
 
-public class Bankkonto {
+public abstract class Bankkonto {
 
     /**
      * Kontostand
@@ -37,23 +37,19 @@ public class Bankkonto {
     }
 
     /**
-     * Methode zum Geld-Einzahlen
+     * Methode zum Geld-Einzahlen (abstrakt)
      *
      * @param x Einzahlungsbetrag
      * @since 1.0
      */
-    public void einzahlen ( double x ) {
-        this.kontoStand += x;
-    }
+    public abstract void einzahlen ( double x );
 
     /**
-     * Methode zum Geld-Abheben
+     * Methode zum Geld-Abheben (abstrakt)
      *
      * @param x Abhebungsbetrag
      * @since 1.0
      */
-    public void abheben ( double x ) {
-        this.kontoStand -= x;
-    }
+    public abstract void abheben ( double x );
 
 }
