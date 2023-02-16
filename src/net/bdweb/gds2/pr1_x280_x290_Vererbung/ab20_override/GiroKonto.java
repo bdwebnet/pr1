@@ -21,7 +21,7 @@ public class GiroKonto extends Bankkonto {
      * Girokonto-Konstruktor
      *
      * @param anfangsBetrag Initialer Kontostand
-     * @param gebuehr Transaktionsgebühr
+     * @param gebuehr       Transaktionsgebühr
      * @since 1.0
      */
     public GiroKonto ( double anfangsBetrag, double gebuehr ) {
@@ -34,10 +34,18 @@ public class GiroKonto extends Bankkonto {
      *
      * @param x Einzahlungsbetrag
      */
+    @Override
     public void einzahlen ( double x ) {
         this.kontoStand = this.kontoStand + x - gebuehr;
     }
-    
+
+    /**
+     * Methode zum Geld-Abheben (berücksichtigt Transaktionsgebühr)
+     *
+     * @param x Abhebungsbetrag
+     * @since 1.0
+     */
+    @Override
     public void abheben ( double x ) {
         this.kontoStand = this.kontoStand - x - gebuehr;
     }
