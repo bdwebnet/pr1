@@ -35,7 +35,7 @@ public class SparKonto extends Bankkonto {
      * @since 1.0
      */
     public void zinsenAnrechnen () {
-        this.kontoStand = this.kontoStand * ( 1 + this.zinsSatz );
+        this.einzahlen(this.kontoStand * ( this.zinsSatz / 100 ));
     }
 
     /**
