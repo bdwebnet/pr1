@@ -37,8 +37,12 @@ class Generalabo {
     +Generalabo(int preis)
     +entwerten()
     +getVerfallsDatum() String
-    +gibInhaber() String
     +gueltigInZone(int zone) boolean
+    +getInhaber() String
+}
+
+class Ticketkontrolle {
+    +kontrolliere(String[] namen, Ticket[] tickets, int zone)
 }
 
 <<abstract>> Ticket
@@ -46,4 +50,6 @@ class Generalabo {
 Ticket <|-- EinzelTicket
 Ticket <|-- Mehrfahrtenkarte
 Ticket <|-- Generalabo
+
+Ticketkontrolle .. Ticket
 ```

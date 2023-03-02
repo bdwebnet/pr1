@@ -16,6 +16,8 @@ class Person {
     +getVorname() String
 }
 
+<<abstract>> Person
+
 class Schueler {
     -tablet: Tablet
     -tablets: ArrayList< Tablet>
@@ -23,7 +25,7 @@ class Schueler {
     +setTablet(Tablet tablet)
     +getTablet() Tablet
     +addTablet(Tablet tablet)
-    +getTablets() ArrayList< Tablet>
+    +getTablets() ArrayList<Tablet>
 }
 
 class Tablet {
