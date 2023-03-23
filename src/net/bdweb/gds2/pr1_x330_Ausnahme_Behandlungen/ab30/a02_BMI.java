@@ -7,17 +7,19 @@ public class a02_BMI {
     public static void main ( String[] args ) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Bitte gebe deine Körpergröße ein: ");
-        double koerpergroesse = sc.nextDouble();
-
-        System.out.print("Bitte gebe dein Gewicht ein: ");
-        double gewicht = sc.nextDouble();
-
         try {
-            System.out.println(berechneBMI(koerpergroesse, gewicht));
+            System.out.print("Bitte gebe dein Gewicht ein: ");
+            double gewicht = sc.nextDouble();
+
+            System.out.print("Bitte gebe deine Körpergröße ein: ");
+            double koerpergroesse = sc.nextDouble();
+
+            System.out.println(berechneBMI(gewicht, koerpergroesse));
         } catch ( Exception e ) {
             System.out.println(e.getMessage());
         }
+
+        sc.close();
     }
 
     static double berechneBMI ( double gewicht, double groesse ) throws Exception {
