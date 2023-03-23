@@ -1,9 +1,23 @@
 package net.bdweb.gds2.pr1_x330_Ausnahme_Behandlungen.ab30;
 
+import java.util.Scanner;
+
 public class a02_BMI {
 
     public static void main ( String[] args ) {
+        Scanner sc = new Scanner(System.in);
 
+        System.out.print("Bitte gebe deine Körpergröße ein: ");
+        double koerpergroesse = sc.nextDouble();
+
+        System.out.print("Bitte gebe dein Gewicht ein: ");
+        double gewicht = sc.nextDouble();
+
+        try {
+            System.out.println(berechneBMI(koerpergroesse, gewicht));
+        } catch ( Exception e ) {
+            System.out.println(e.getMessage());
+        }
     }
 
     static double berechneBMI ( double gewicht, double groesse ) throws Exception {
