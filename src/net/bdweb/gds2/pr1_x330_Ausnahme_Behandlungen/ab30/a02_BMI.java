@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class a02_BMI {
 
     public static void main ( String[] args ) {
-        Scanner sc = new Scanner(System.in);
 
-        try {
+        try ( Scanner sc = new Scanner(System.in) ) {
             System.out.print("Bitte gebe dein Gewicht ein: ");
             double gewicht = sc.nextDouble();
 
@@ -15,16 +14,18 @@ public class a02_BMI {
             double koerpergroesse = sc.nextDouble();
 
             System.out.println(berechneBMI(gewicht, koerpergroesse));
-        } catch ( Exception e ) {
+        } catch ( IllegalArgumentException e ) {
             System.out.println(e.getMessage());
+        } catch ( Exception e ) {
+            System.out.println("Es ist ein Fehler aufgetreten");
+        } finally {
+            System.out.println("Danke für die Nutzung");
         }
-
-        sc.close();
     }
 
-    static double berechneBMI ( double gewicht, double groesse ) throws Exception {
-        if ( groesse <= 0 || groesse > 3 ) throw new Exception("Die Körpergröße ist nicht möglich");
-        if ( gewicht <= 0 || gewicht > 500 ) throw new Exception("Das Gewicht ist nicht möglich");
+    static double berechneBMI ( double gewicht, double groesse ) throws IllegalArgumentException {
+        if ( groesse <= 0 || groesse > 3 ) throw new IllegalArgumentException("Die Körpergröße ist nicht möglich");
+        if ( gewicht <= 0 || gewicht > 500 ) throw new IllegalArgumentException("Das Gewicht ist nicht möglich");
         return gewicht / ( groesse * groesse );
     }
 
