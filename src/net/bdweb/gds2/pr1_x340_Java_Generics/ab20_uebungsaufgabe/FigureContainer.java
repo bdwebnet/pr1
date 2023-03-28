@@ -26,12 +26,7 @@ public class FigureContainer {
     }
 
     public boolean contains ( int id ) {
-        for ( Figure f : this.figures ) {
-            if ( f.id == id ) {
-                return true;
-            }
-        }
-        return false;
+        return this.getFigure(id) != null;
     }
 
     public Iterator<Figure> iterator () {
