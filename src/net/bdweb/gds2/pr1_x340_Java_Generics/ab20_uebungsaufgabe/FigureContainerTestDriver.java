@@ -5,31 +5,31 @@ import java.util.Iterator;
 public class FigureContainerTestDriver {
 
     public static void main ( String[] args ) {
-        FigureContainer fc = new FigureContainer();
+        FigureContainer container = new FigureContainer();
 
         for ( int i = 1; i <= 100; i++ ) {
 
             if ( i % 3 == 0 ) {
-                fc.add(new Circle(i));
+                container.add(new Circle(i));
             } else if ( i % 3 == 1 ) {
-                fc.add(new Triangle(i));
+                container.add(new Triangle(i));
             } else {
-                fc.add(new Square(i));
+                container.add(new Square(i));
             }
 
         }
 
-        System.out.println("Anzahl der Elemente: " + fc.size());
+        System.out.println("Anzahl der Elemente: " + container.size());
 
-        System.out.println("Enthält id 42? " + fc.contains(42));
-        System.out.println("-- Objekt 42: " + fc.getFigure(42));
+        System.out.println("Enthält id 42? " + container.contains(42));
+        System.out.println("-- Objekt 42: " + container.getFigure(42));
 
-        System.out.println("Enthält id 8015? " + fc.contains(8015));
-        System.out.println("-- Objekt 42: " + fc.getFigure(8015));
+        System.out.println("Enthält id 8015? " + container.contains(8015));
+        System.out.println("-- Objekt 42: " + container.getFigure(8015));
 
         int count = 0;
 
-        Iterator<Figure> itr = fc.iterator();
+        Iterator<Figure> itr = container.iterator();
 
         while ( itr.hasNext() ) {
             itr.next();
@@ -38,7 +38,7 @@ public class FigureContainerTestDriver {
 
         System.out.println("Anzahl der Elemente: " + count);
 
-        fc.drawAll();
+        container.drawAll();
     }
 
 }
