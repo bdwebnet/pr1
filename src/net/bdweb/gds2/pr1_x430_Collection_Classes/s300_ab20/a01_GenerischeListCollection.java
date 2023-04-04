@@ -1,8 +1,8 @@
-package net.bdweb.gds2.pr1_x430_Collection_Classes.ab20;
+package net.bdweb.gds2.pr1_x430_Collection_Classes.s300_ab20;
 
 import java.util.ArrayList;
 
-public class GenerischeListCollection {
+public class a01_GenerischeListCollection {
 
     public static void main ( String[] args ) {
 

@@ -1,4 +1,4 @@
-package net.bdweb.gds2.pr1_x430_Collection_Classes.ab10;
+package net.bdweb.gds2.pr1_x430_Collection_Classes.s100_ab10;
 
 import java.util.ArrayList;
 import java.util.Iterator;
