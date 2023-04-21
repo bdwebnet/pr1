@@ -1,7 +1,9 @@
-package net.bdweb.gds2.pr1_2023_04_21_texteinlesen;
+package net.bdweb.gds2.pr1_x410_Anwendungen_Lesen_von_Dateien.einstieg;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.nio.charset.StandardCharsets;
 
 public class Einlesen {
@@ -10,7 +12,7 @@ public class Einlesen {
 
         try {
 
-            FileInputStream myFileReader = new FileInputStream("/Users/bd/dev_schule/projects_pr1/src/net/bdweb/gds2/pr1_2023_04_21_texteinlesen/file.txt");
+            FileInputStream myFileReader = new FileInputStream("/Users/bd/dev_schule/projects_pr1/src/net/bdweb/gds2/pr1_x410_Anwendungen_Lesen_von_Dateien/einstieg/file.txt");
 
             InputStreamReader myReader = new InputStreamReader(myFileReader, StandardCharsets.US_ASCII);
 
@@ -19,6 +21,14 @@ public class Einlesen {
                 System.out.print(( char ) read);
             }
             myReader.close();
+
+            FileOutputStream myFileWriter = new FileOutputStream("/Users/bd/dev_schule/projects_pr1/src/net/bdweb/gds2/pr1_x410_Anwendungen_Lesen_von_Dateien/einstieg/file.txt");
+
+            OutputStreamWriter myWriter = new OutputStreamWriter(myFileWriter, StandardCharsets.US_ASCII);
+
+            myWriter.append('t');
+
+            myWriter.close();
 
         } catch ( java.io.FileNotFoundException e ) {
             System.out.println("Datei nicht gefunden");
