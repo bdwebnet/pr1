@@ -1,4 +1,4 @@
-package net.bdweb.gds2.pr1_x410_Anwendungen_Lesen_von_Dateien.ab50_Textdateien_Lesen;
+package net.bdweb.gds2.pr1_x410_Anwendungen_Lesen_von_Dateien.ab50_Textdateien_Lesen.a01;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
