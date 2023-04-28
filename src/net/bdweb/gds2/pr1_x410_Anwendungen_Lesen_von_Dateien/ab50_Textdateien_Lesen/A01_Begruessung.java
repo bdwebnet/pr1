@@ -13,7 +13,7 @@ public class A01_Begruessung {
 
         try {
 
-            FileInputStream myFileReader = new FileInputStream("/Users/bd/dev_schule/projects_pr1/src/net/bdweb/gds2/pr1_x410_Anwendungen_Lesen_von_Dateien/ab50_Textdateien_Lesen/namen.txt");
+            FileInputStream myFileReader = new FileInputStream("src/net/bdweb/gds2/pr1_x410_Anwendungen_Lesen_von_Dateien/ab50_Textdateien_Lesen/namen.txt");
 
             InputStreamReader myReader = new InputStreamReader(myFileReader, StandardCharsets.UTF_8);
 
