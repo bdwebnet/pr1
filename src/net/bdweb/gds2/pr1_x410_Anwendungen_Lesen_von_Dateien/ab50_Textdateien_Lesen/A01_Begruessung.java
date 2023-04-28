@@ -31,9 +31,9 @@ public class A01_Begruessung {
             e.printStackTrace();
         }
 
-        namen.forEach(( name ) -> {
+        for ( String name : namen ) {
             System.out.println("Hallo " + name);
-        });
+        }
 
     }
 
