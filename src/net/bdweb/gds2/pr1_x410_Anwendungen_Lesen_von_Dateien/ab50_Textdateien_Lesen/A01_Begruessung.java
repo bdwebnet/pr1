@@ -1,8 +1,10 @@
 package net.bdweb.gds2.pr1_x410_Anwendungen_Lesen_von_Dateien.ab50_Textdateien_Lesen;
 
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 
 public class A01_Begruessung {
@@ -11,40 +13,22 @@ public class A01_Begruessung {
 
         ArrayList<String> namen = new ArrayList<String>();
 
-        try {
+        String filePath = "src/net/bdweb/gds2/pr1_x410_Anwendungen_Lesen_von_Dateien/ab50_Textdateien_Lesen/namen.txt";
 
-            FileInputStream myFileReader = new FileInputStream("src/net/bdweb/gds2/pr1_x410_Anwendungen_Lesen_von_Dateien/ab50_Textdateien_Lesen/namen.txt");
+        try ( BufferedReader myReader = Files.newBufferedReader(Path.of(filePath)) ) {
 
-            InputStreamReader myReader = new InputStreamReader(myFileReader, StandardCharsets.UTF_8);
+            String c;
 
-            int read;
-            StringBuilder currentName = new StringBuilder();
-
-            while ( ( read = myReader.read() ) != -1 ) {
-                char c = ( char ) read;
-
-                // if char is not a line break
-                if ( c == '\n' ) {
-                    namen.add(currentName.toString());
-                    currentName = new StringBuilder();
-                } else {
-                    currentName.append(c);
-                }
+            while ( ( c = myReader.readLine() ) != null ) {
+                namen.add(c);
             }
 
-            // add last name
-            if ( currentName.length() > 0 ) {
-                namen.add(currentName.toString());
-            }
-
-            myReader.close();
-
-        } catch ( java.io.FileNotFoundException e ) {
+        } catch ( FileNotFoundException e ) {
             System.out.println("Datei nicht gefunden");
-        } catch ( java.io.IOException e ) {
+        } catch ( IOException e ) {
             System.out.println("Fehler beim Lesen der Datei");
         } catch ( Exception e ) {
-            System.out.println("Fehler");
+            e.printStackTrace();
         }
 
         namen.forEach(( name ) -> {
