@@ -24,6 +24,7 @@ public class Zahlenschloss extends JFrame implements ActionListener {
         for ( int i = 1; i < 10; i++ ) {
             JButton button = new JButton(String.valueOf(i));
             button.addActionListener(this);
+            button.setActionCommand(String.valueOf(i));
             this.panel.add(button);
             this.buttons.add(button);
         }
