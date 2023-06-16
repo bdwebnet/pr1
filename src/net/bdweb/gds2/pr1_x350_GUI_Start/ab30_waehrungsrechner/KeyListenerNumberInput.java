@@ -1,4 +1,4 @@
-package net.bdweb.gds2.pr1_x440_x350_GUI_Start.ab30_waehrungsrechner;
+package net.bdweb.gds2.pr1_x350_GUI_Start.ab30_waehrungsrechner;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

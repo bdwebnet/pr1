@@ -1,4 +1,4 @@
-package net.bdweb.gds2.pr1_x440_x350_GUI_Start.ab20_GUI_JFrame_Erweiterung_Layoutmanager;
+package net.bdweb.gds2.pr1_x350_GUI_Start.ab20_GUI_JFrame_Erweiterung_Layoutmanager;
 
 import javax.swing.*;
 import java.awt.*;
