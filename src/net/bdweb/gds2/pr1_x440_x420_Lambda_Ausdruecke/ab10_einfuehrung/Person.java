@@ -67,14 +67,9 @@ public class Person {
     public int getAge () {
         LocalDate today = LocalDate.now();
 
-        int days = today.getDayOfMonth() - this.getBirthday().getDayOfMonth();
-        int months = today.getMonthValue() - this.getBirthday().getMonthValue();
-
         int years = today.getYear() - this.getBirthday().getYear();
 
-        if ( months > 0 ) {
-            years--;
-        } else if ( months == 0 && days > 0 ) {
+        if ( today.getDayOfYear() >= this.getBirthday().getDayOfYear() ) {
             years--;
         }
 
